@@ -1,0 +1,157 @@
+.mainframe {
+    margin-top: 8vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+}
+.deleteButton{
+    margin: auto;
+    width:3.5vw;
+    height: 2vw;
+    font: 1vw "微软雅黑";
+    border: 0.1vw solid rgb(179, 178, 178);
+    border-radius: 0.4vw;
+    color: rgb(22, 14, 3);
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+
+}
+#button-area li{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    text-align: center;
+    font: 1.1vw "微软雅黑";
+}
+
+table td,
+table th {
+    border: 0.1vh solid #cad9ea;
+    color: #666;
+}
+table thead th {
+    background-color: #CCE8EB;
+   
+}
+
+table tr:nth-child(odd) {
+    background: #fff;
+}
+
+table tr:nth-child(even) {
+    background: #F5FAFA;
+}
+input::-webkit-input-placeholder {
+    /* placeholder颜色  */
+    padding: 0;
+    color: #aab2bd;
+    /* placeholder字体大小  */
+    font-size: 1vw;
+    /* placeholder位置  */
+    text-align: center;
+}
+.form-button {
+    margin: 0.8vw;
+    padding: 0;
+    border: 0.1vw solid rgb(179, 178, 178);
+    border-radius: 0.4vw;
+    width: 7vw;
+    height: 4.5vh;
+    size: fixed;
+    font: 1vw "微软雅黑";
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+
+.td {
+    text-align: center;
+    line-height: 5vh;
+    /* width: 5vw; */
+    width: 90%;
+    word-break: keep-all;
+    /* 不换行 */
+    white-space: nowrap;
+    /* 不换行 */
+    overflow: hidden;
+    /* 内容超出宽度时隐藏超出部分的内容 */
+    text-overflow: ellipsis;
+    /* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一起使用。*/
+}
+
+th {
+    text-align: center;
+    width: 11.5vw;
+    line-height: 5vh;
+}
+
+#file-table {
+    width: 80vw;
+    line-height: 10vh;
+    table-layout: fixed;
+    /* 只有定义了表格的布局算法为fixed，下面td的定义才能起作用。 */
+}
+
+#file-frame {
+    width: 50vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+}
+
+#download-box {
+    width: 87vw;
+    height: 80vh;
+    border: 0.1vw dashed black;
+    border-radius: 0.4vw;
+
+}
+
+#button-area {
+    height: 8vh;
+    width: auto;
+}
+
+#button-area ul {
+    margin-left: 5vw;
+    padding-left: 0;
+    height: 8vh;
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* vertical-align: middle; */
+}
+
+#button-area li {
+    float: left;
+    /* 使li内容横向浮动，即横向排列  */
+    /* margin-right: 0.5vw; */
+    /* 两个li之间的距离*/
+    position: relative;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+
+#download-box ul {
+
+    margin-top: 2vh;
+    list-style-type: none;
+}
+
+

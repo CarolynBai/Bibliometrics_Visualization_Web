@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Services</title>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- js -->
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<!-- //js -->
+<!-- pop-up-box -->
+<link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
+<!-- //pop-up-box -->
+<!-- font-awesome icons -->
+<link href="css/font-awesome.css" rel="stylesheet"> 
+<!-- //font-awesome icons -->
+<link href="http://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900&amp;subset=latin-ext" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+</head>
+	
+<body>
+<!-- header -->
+	<div class="header">
+		<div class="container">
+			<div class="agile_header_grid">
+				<div class="w3_agile_logo">
+					<h1><a href="Main1.html"><span>B</span>ibliometric</a></h1>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			<div class="w3_agileits_nav">
+				<nav class="navbar navbar-default">
+					<div class="navbar-header navbar-left">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					</div>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+						<nav>
+							<ul class="nav navbar-nav">
+								<li><a href="Main1.html" class="hvr-sweep-to-bottom">Home</a></li>
+								<li class="active"><a href="services.html">Services</a></li>
+								<li><a href="search.html" class="hvr-sweep-to-bottom">Customized Search</a></li>
+								<li><a href="contact.html" class="hvr-sweep-to-bottom">Contact</a></li>
+							</ul>
+							
+						</nav>
+					</div>
+				</nav>	
+			</div>
+		</div>
+	</div>
+<!-- //header -->
+<!-- pop-up-box -->
+	
+	
+<!-- //pop-up-box -->	
+<script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
+<script>
+	$(document).ready(function() {
+	$('.popup-with-zoom-anim').magnificPopup({
+		type: 'inline',
+		fixedContentPos: false,
+		fixedBgPos: true,
+		overflowY: 'auto',
+		closeBtnInside: true,
+		preloader: false,
+		midClick: true,
+		removalDelay: 300,
+		mainClass: 'my-mfp-zoom-in'
+	});
+																	
+	});
+</script>
+<!-- banner -->	
+<!-- banner -->	
+<div class="banner1">
+    <h3>Analysis Based On Country</h3>
+</div>
+<!-- //banner -->	
+<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<title>countries rank of publications</title>
+		<script src="http://static.popodv.com/dvlibs/echarts/echarts.v4.min.js"></script>
+		<script src="http://static.popodv.com/dvlibs/tool/jquery.min.js"></script>
+		<style>html,body,#container{width:100%;height:100%;margin:0;padding:0;}</style>
+</head>
+<body>
+		<div id="container"></div>
+		<script>
+
+		
+
+		var myChart = echarts.init(document.getElementById('container'));
+
+
+		var bgPatternSrc = "images/bg.png";
+
+	    var bgPatternImg = new Image();
+	    bgPatternImg.src = bgPatternSrc;
+
+
+
+		$.get('http://static.popodv.com/data/geo/world/world.geo.json', function (geoJson) {
+		
+				echarts.registerMap('world', geoJson);
+		
+				myChart.setOption(option = {
+						tooltip: {
+								trigger: 'item',
+								formatter: '{b}<br/>Ranked No.{c} '
+						},
+						toolbox: {
+								show: true,
+								orient: 'vertical',
+								left: 'right',
+								top: 'center',
+								feature: {
+										dataView: {readOnly: false},
+										restore: {},
+										saveAsImage: {}
+								}
+						},
+						visualMap: {
+								min: 15,
+								max: 1,
+								text:['Low','High'],
+								realtime: false,
+								calculable: true,
+								inRange: {
+										color: ['orangered','yellow', 'lightskyblue']
+								}
+						},
+						series: [
+								{
+										name: 'countries rank of publications',
+										type: 'map',
+										mapType: 'world', // 自定义扩展图表类型
+										itemStyle:{
+												normal:{label:{show:false}},
+												emphasis:{label:{show:true}}
+										},
+										data:[
+												{name: 'United Kingdom', value: 1},
+												{name: 'United States of America', value: 2},
+												{name: 'Italy', value: 3},
+												{name: 'Germany', value: 4},
+												{name: 'France', value: 5},
+												{name: 'Australia', value: 5},
+												{name: 'China', value: 6},
+												{name: 'Finland', value: 7},
+												{name: 'Norway', value: 7},
+												{name: 'Greece', value: 7},
+												{name: 'Canada', value: 7},
+												{name: 'Netherlands', value: 8},
+												{name: 'Switzerland', value: 8},
+												{name: 'Denmark', value: 9},
+												{name: 'Sweden', value: 9},
+												{name: 'India', value: 9},
+												{name: 'Pakistan', value: 9},
+												{name: 'Spain', value: 10},
+												{name: 'Singapore', value: 10},
+												{name: 'South Korea', value: 10},
+												{name: 'Japan', value: 10},
+												{name: 'Brazil', value: 11},
+												{name: 'Mexico', value: 11},
+												{name: 'Belgium', value: 11},
+												{name: 'Hungary', value: 11},
+												{name: 'Turkey', value: 12},
+												{name: 'Czech Republic', value: 13},
+												{name: 'Saudi Arabia', value: 13},
+												{name: 'Austria', value: 13},
+												{name: 'Qatar', value: 13},
+												{name: 'Chile', value: 14},
+												{name: 'Nigeria', value: 14},
+												{name: 'Portugal', value: 14},
+												{name: 'Iran', value: 14},
+												{name: 'Israel', value: 15},
+												{name: 'Argentina', value: 15},
+												{name: 'Iceland', value: 15},
+												{name: 'Russia', value: 15},
+												{name: 'Tunisia', value: 15},
+												{name: 'Poland', value: 15},
+												{name: 'Algeria', value: 15},
+												{name: 'Ireland', value: 15},
+												{name: 'Romania', value: 15},
+												{name: 'Tanzania', value: 15}
+										],
+										// 自定义名称映射
+										//nameMap: {
+										//		'Central and Western': '中西区',
+										//		'Eastern': '东区',
+										//		'Islands': '离岛',
+										//		'Kowloon City': '九龙城',
+										//		'Kwai Tsing': '葵青',
+										//		'Kwun Tong': '观塘',
+										//		'North': '北区',
+										//		'Sai Kung': '西贡',
+										//		'Sha Tin': '沙田',
+										//		'Sham Shui Po': '深水埗',
+										//		'Southern': '南区',
+										//		'Tai Po': '大埔',
+										//		'Tsuen Wan': '荃湾',
+										//		'Tuen Mun': '屯门',
+										//		'Wan Chai': '湾仔',
+										//		'Wong Tai Sin': '黄大仙',
+										//		'Yau Tsim Mong': '油尖旺',
+										//		'Yuen Long': '元朗'
+										//}
+								}
+						]
+				});
+
+				
+
+		});
+		
+		// 刷新调整
+		window.onresize = function () {
+			myChart.resize();
+		}
+				</script>
+</body>
+</html>
